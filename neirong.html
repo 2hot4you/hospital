@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>医院</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/list.css"/>
+<!-- 导航部分 -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/mY_neirong.js"></script>
+	<script src="js/FengTab.js" type="text/javascript"></script>
+	
+<script  type="text/javascript"> 
+$(document).ready(function(){
+	
+	$(".navbg").capacityFixed();
+	
+	$("#navul > li").not(".navhome").hover(function(){
+		$(this).addClass("navmoon");
+	},function(){
+		$(this).removeClass("navmoon");
+	});
+	
+});
+</script>
+<script type="text/javascript">
+function setContentTab(name, curr, n) {
+    for (i = 1; i <= n; i++) {
+        var menu = document.getElementById(name + i);
+        var cont = document.getElementById("con_" + name + "_" + i);
+        menu.className = i == curr ? "hover" : "";
+        if (i == curr) {
+            cont.style.display = "block";
+        } else {
+            cont.style.display = "none";
+        }
+    }
+}
+</script>
+
+</head>
+<body>
+<!-- 头部 -->
+<div class="topbox">
+	<div class="top">
+			<div class="top-left">
+			您好：欢迎来到石家庄人民医院！
+			</div>
+			<div class="top-right">
+			<a href="#">网站首页</a>|
+			<a href="#">联系电话</a>|
+			<a href="#">点击咨询</a>
+			</div>
+	</div>
+</div>
+<!-- logo -->
+<div class="logobox">
+	<div class="logobox-left">
+	<img src="images/logo.png">
+	</div>
+	<div class="logobox-right">
+		<img src="images/dianhua.png">
+	</div>
+	<div class="sousuo">
+		 <div class="dis_right">
+      <style>
+	  .txtsea{ border:none; width:130px; margin-left:15px; display:inline; float:left; line-height:20px; background:#fff;}
+	
+      </style>
+        <form  name="formsearch" action="#" onSubmit="check();">
+        <div class="search">
+        <input class="txtsea" value="搜一下" onBlur="this.value =(this.value=='') ? '搜一下' : this.value;" onFocus="this.value =(this.value=='搜一下') ? '' : this.value;" maxlength="150" id="keyword" name="keyword" type="text">
+        <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+    </div>
+	</div>
+</div>
+<!-- 导航 -->
+	<div class="navbg">
+		<div class="col960" style="margin:auto">
+			<ul id="navul" class="cl">
+				<li>
+					<a href="#">网站首页</a>	
+				</li>
+				<li>
+					<a href="#">医院概况</a>
+					
+				</li>
+				<li>
+					<a href="#">专家简介</a>
+					
+				</li>
+				<li>
+					<a href="#">医院动态</a>
+				</li>
+				<li>
+					<a href="#">特色疗法</a>
+					
+				</li>
+				<li>
+					<a href="#">病例展示</a>
+					
+				</li>
+				<li>
+					<a href="#">联系我们</a>
+				</li>
+				<li class="jibing">
+					<a href="#">疾病导航</a>
+					<ul>
+						<li><a href="#">SEO杂谈</a></li>
+						<li><a href="#">站长工具</a></li>
+						<li><a href="#">经验分享</a></li>
+
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<!-- banner -->
+	
+	<div class="banner-box">
+	<div id="doc">
+				<div class="tkWrap">
+
+				  <ul id="tklist" class="tkAD">
+				  
+					
+					<li><a href="" target="_blank"><img src="images/01.jpg" alt="{$focus.words}"/></a></li>
+					<li><a href="" target="_blank"><img src="images/02.jpg" alt="{$focus.words}"/></a></li>
+					<li><a href="" target="_blank"><img src="images/03.jpg" alt="{$focus.words}"/></a></li>
+				  </ul>
+				  <div id="tkBottun" class="tkBtn"></div>
+				</div>
+
+				<script type="text/javascript">
+				var _tkAD = new tkSwitchAD("tklist","tkBottun");
+				</script>
+
+	</div>
+</div>
+<!--neirong main -->
+<div class="nr-main">
+	<!-- left -->
+	<div class="nr-main-lf">
+		<div class="title">
+				<span><a href="#">更多</a></span><h3> 您的当前位置：首页>医院动态</h3>
+		</div>
+		<div class="nr-main-lf-cen">
+			<div class="nr-h1"><h1>如何能积极有效缓解失眠呢?<h1></div>
+			<div class="t2">来源：未知    发表时间：2014-10-28    点击: 181次 </div>
+			<div class="nr-p">
+				<p>经常失眠有哪些危害?石家庄长江心理精神医院专家介绍说：失眠是一种很常见的现象了,我们都知道,睡眠对一个人的健康是非常重要的.然而,在现实生活中有很多人,为此导致睡眠不足,长期,引发了一系列的睡眠相关的疾病,如乏力,烦躁等各种原因.失眠的危害有很多，下面为您详细介绍。</p>
+			<h3>经常失眠有哪些危害?</h3>
+
+　　<p>危害一、身体的免疫力下降，容易感染，对各种疾病的抵抗力减弱。长久以往，还会引发各种疾病，比如心脏病、高血管、老年痴呆。</p>
+
+　　<p>危害二、加速衰老。据医院接治的专家介绍，百分之80以上的患者第一眼看上去都比实际年龄大，这主要由于人的皮肤健美与睡眠状态有直接关系。健康睡眠的人脸色红润，神采飞扬，肌肤光洁润泽，充满青春活力。但是失眠患者神情黯然，眼圈黑晕，脸色晦暗，面颊有色斑，皮肤松弛皱褶。     》》》》》》推荐阅读：患上失眠症会出现哪些症状表现</p>
+
+
+　　<p>危害二、加速衰老。据医院接治的专家介绍，百分之80以上的患者第一眼看上去都比实际年龄大，这主要由于人的皮肤健美与睡眠状态有直接关系。健康睡眠的人脸色红润，神采飞扬，肌肤光洁润泽，充满青春活力。但是失眠患者神情黯然，眼圈黑晕，脸色晦暗，面颊有色斑，皮肤松弛皱褶。     》》》》》》推荐阅读：患上失眠症会出现哪些症状表现</p>
+　　<p>危害一、身体的免疫力下降，容易感染，对各种疾病的抵抗力减弱。长久以往，还会引发各种疾病，比如心脏病、高血管、老年痴呆。</p>
+
+　　<p>危害二、加速衰老。据医院接治的专家介绍，百分之80以上的患者第一眼看上去都比实际年龄大，这主要由于人的皮肤健美与睡眠状态有直接关系。健康睡眠的人脸色红润，神采飞扬，肌肤光洁润泽，充满青春活力。但是失眠患者神情黯然，眼圈黑晕，脸色晦暗，面颊有色斑，皮肤松弛皱褶。     》》》》》》推荐阅读：患上失眠症会出现哪些症状表现</p>
+　　<p>危害三、失眠可导致自杀率增大。失眠可能导致的第三种后果，出现易激惹、情感脆弱、多愁善感、自我封闭、人际关系紧张、生活缺乏兴趣、性欲减退、伴焦虑、抑郁等精神症状，此外，失眠人群患抑郁症的人数为正常人的3倍，遇有抑郁症伴严重失眠的病人，他们中的自杀率大大增加，近年来，中、青年和大学生的自杀率有增无减，成为家庭、社会不安定的重要因素。</p>
+
+　　<p>危害四、失眠可导致巨大社会损失。睡眠不足间接引起的经济损失和危害性更是触目惊心，由于白天身体疲劳、精神萎糜大大增加了工作时意外事故发生的机会，不仅自己丧命还危及他人性命，对社会造成巨大损失。</p>
+
+　　<p>危害四、失眠可导致巨大社会损失。睡眠不足间接引起的经济损失和危害性更是触目惊心，由于白天身体疲劳、精神萎糜大大增加了工作时意外事故发生的机会，不仅自己丧命还危及他人性命，对社会造成巨大损失。</p>
+　　<p>危害四、失眠可导致巨大社会损失。睡眠不足间接引起的经济损失和危害性更是触目惊心，由于白天身体疲劳、精神萎糜大大增加了工作时意外事故发生的机会，不仅自己丧命还危及他人性命，对社会造成巨大损失。</p>
+<a href="#" style="padding-left:100px;"><img src="images/48-14102PTU9304.gif"></a>
+<div class="spxp">
+<span><a href="">上一篇：失眠会诱发哪些身体疾病？</a></span>
+<span><a href="">下一篇：失眠会诱发哪些身体疾病？</a></span>
+</div>
+			</div>
+			<div class="xingqu">
+			<div class="x1">您还可能感兴趣的文章!</div>
+			<dl class="x2">
+<dd><a href="neirong.html" title="长期的失眠会带来什么危害呢">长期的失眠会带来什么危害呢</a> </dd>
+<dd><a href="neirong.html" title="长期性的失眠给我们带来哪些危害">长期性的失眠给我们带来哪些危害</a></dd>
+<dd><a href="neirong.html" title="青少年得了失眠会出现什么危害">青少年得了失眠会出现什么危害</a></dd>
+<dd><a href="neirong.html" title="长期失眠给患者带来什么影响呢">长期失眠给患者带来什么影响呢</a></dd>
+<dd><a href="neirong.html" title="失眠症给患者带来了哪些严重危害">失眠症给患者带来了哪些严重危害</a> </dd>
+
+</dl>
+			
+			</div>
+			<div class="tuijian">
+				<div class="x1">您还可能感兴趣的文章!</div>
+			<dl class="x2">
+<dd><a href="/smz/wh/25830.html" title="长期的失眠会带来什么危害呢">长期的失眠会带来什么危害呢</a> </dd>
+<dd><a href="/smz/wh/25693.html" title="长期性的失眠给我们带来哪些危害">长期性的失眠给我们带来哪些危害</a></dd>
+<dd><a href="/smz/wh/25517.html" title="青少年得了失眠会出现什么危害">青少年得了失眠会出现什么危害</a></dd>
+<dd><a href="/smz/wh/25472.html" title="长期失眠给患者带来什么影响呢">长期失眠给患者带来什么影响呢</a></dd>
+<dd><a href="/smz/wh/25444.html" title="失眠症给患者带来了哪些严重危害">失眠症给患者带来了哪些严重危害</a> </dd>
+
+</dl>
+			</div>
+			
+		</div>
+	</div>
+	<!-- riight -->
+	<div class="ny-rh">
+			<div class="title">
+				<span><a href="#">更多</a></span><h3> 公司简介</h3>
+		    </div>
+			<div class="ny-jianj">
+				<img src="images/neiye_10.jpg">
+				<p>河北省石家庄医学高等专科学校第三附属医院是集医疗、教学、科研于一体的大型一级甲等市医保定点综合医院，是石家庄医学高等专科学校的临床基地，医院建有1200平方米的综合门诊楼，1600平方米的住院部，配套床位100余张河北省石家庄医</p>
+			</div>
+			<div class="title mt20">
+				<span><a href="#">更多</a></span><h3> 网上挂号</h3>
+		    </div>
+			<div class="ny-guah">
+				<img src="images/neiye_10.jpg">
+				<ul>
+				<li><a href="#"><img src="images/neiye_16.jpg"></a></li>
+				<li><a href="#"><img src="images/neiye_18.jpg"></a></li>
+				<li><a href="#"><img src="images/neiye_22.jpg"></a></li>
+				<li><a href="#"><img src="images/neiye_23.jpg"></a></li>
+				</ul>
+				
+				<a href="#"><img src="images/neiye_26.jpg"></a>
+			</div>
+			<div class="title mt20">
+				<span><a href="#">更多</a></span><h3> 专家介绍</h3>
+		    </div>
+			<div class="ny-zhuanjia">
+				<img src="images/52-150205104Ka92.png">
+				<p><span>某某某教授</span> 主任医师<p>
+				<p><span>擅长：</span> 针灸 中医</p>
+				<p>在学术方面的较高造诣而久负盛名，表论文多篇：《精神分裂症与神...<span>【详细】</span></p>
+			<a href="#"><img src="images/neiye_16.jpg"></a>
+				<a href="#"><img src="images/neiye_18.jpg"></a>
+				
+			</div>
+				<div class="title mt20">
+				<span><a href="#">更多</a></span><h3> 特色疗法</h3>
+		    </div>
+			<div class="ny-liaofa">
+				<dl class="x2 xx2">
+<dt><a href="javascript:void(0)" onclick="return openChat();"><img src="images/pd_13.jpg"/></a></dt>
+<dd><a href="/teseliaofa/2011/0807/2528.html" title="治疗精神分裂症首选长江心理医院“激活安神平衡疗法”">治疗精神分裂症首选长江心</a></dd>
+<dd><a href="/teseliaofa/2011/1026/3340.html" title="心理精神疾病治疗新突破---rTMS经颅磁刺激治疗仪">心理精神疾病治疗新突破--</a></dd>
+<dd><a href="/teseliaofa/2011/1104/3371.html" title="中医疗法加现代高科技技术治疗精神疾病更彻底">中医疗法加现代高科技技术</a></dd>
+<dd><a href="/teseliaofa/2011/1104/3370.html" title="治疗心理精神疾病的新突破---r-TMS脑康复治疗仪">治疗心理精神疾病的新突破</a></dd>
+<dd><a href="/teseliaofa/2010/1130/960.html" title="解郁安神平衡疗法如何治疗心火偏亢型失眠">解郁安神平衡疗法如何治疗</a> </dd>
+
+</dl>
+				
+			</div>
+	</div>
+</div>
+
+<!-- footer -->
+<div class="footer-box">
+<div class="foot">
+  <div class="foot_con">
+    <div class="foot_left"><img src="images/footlogo.png" /></div>
+    <div class="foot_right">
+      <p> Copyright 2012, 版权所有 石家庄长江心理精神医院-- 全国百姓放心的网上就医平台<br />
+        健康咨询热线：400-0039-120 <br />
+        联系地址：石家庄市长安区胜利北街350号 （260医院北临30米）<br />
+        特别声明：本站信息仅供参考 不能作为诊断及医疗的依据 
+
+
+ <br />网站备案：ICP备14004163号-1 <a href="http://www.mycodes.net/" target="_blank">源码之家</a>
+              </p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
