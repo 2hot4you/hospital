@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>金川县人民医院</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<!-- 导航部分 -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/mY_neirong.js"></script>
+<script src="js/FengTab.js" type="text/javascript"></script>
+	
+<script  type="text/javascript">
+$(document).ready(function(){
+	
+	$(".navbg").capacityFixed();
+	
+	$("#navul > li").not(".navhome").hover(function(){
+		$(this).addClass("navmoon");
+	},function(){
+		$(this).removeClass("navmoon");
+	});
+	
+});
+</script>
+<script type="text/javascript">
+function setContentTab(name, curr, n) {
+    for (i = 1; i <= n; i++) {
+        var menu = document.getElementById(name + i);
+        var cont = document.getElementById("con_" + name + "_" + i);
+        menu.className = i == curr ? "hover" : "";
+        if (i == curr) {
+            cont.style.display = "block";
+        } else {
+            cont.style.display = "none";
+        }
+    }
+}
+</script>
+
+</head>
+<body>
+<!-- 头部 -->
+<div class="topbox">
+	<div class="top">
+			<div class="top-left">
+			您好：欢迎来到金川县人民医院
+			</div>
+			<div class="top-right">
+			<a href="index.html">网站首页</a>|
+			<a href="#">联系电话</a>|
+			<a href="#">点击咨询</a>
+			</div>
+	</div>
+</div>
+<!-- logo -->
+<div class="logobox">
+	<div class="logobox-left">
+	<img src="images/logo.png">
+	</div>
+	<div class="logobox-right">
+		<img src="images/dianhua.png">
+	</div>
+	<div class="sousuo">
+		 <div class="dis_right">
+      <style>
+	  .txtsea{ border:none; width:130px;padding-left: 10px; margin-left:15px; display:inline; float:left; line-height:20px; background:#fff;}
+	
+      </style>
+        <form  name="formsearch" action="#" onSubmit="check();">
+        <div class="search">
+        <input class="txtsea" value="搜一下" onBlur="this.value =(this.value=='') ? '搜一下' : this.value;" onFocus="this.value =(this.value=='搜一下') ? '' : this.value;" maxlength="150" id="keyword" name="keyword" type="text">
+        <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+    </div>
+	</div>
+</div>
+<!-- 导航 -->
+	<div class="navbg">
+		<div class="col960" style="margin:auto">
+			<ul id="navul" class="cl">
+				<li>
+					<a href="index.html">网站首页</a>	
+				</li>
+				<li>
+					<a href="hospital-info.html">医院概况</a>
+					
+				</li>
+				<li>
+					<a href="doctor-list.html">专家简介</a>
+					
+				</li>
+				<li>
+					<a href="pindao.html">医院动态</a>
+				</li>
+				
+				<li>
+					<a href="#">病例展示</a>
+					
+				</li>
+				<li>
+					<a href="#">联系我们</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+
+<!-- banner -->
+	
+	<div class="banner-box">
+	<div id="doc">
+				<div class="tkWrap">
+
+				  <ul id="tklist" class="tkAD">
+				  
+					
+					<li><a href="" target="_blank"><img src="images/01.jpg" alt="{$focus.words}"/></a></li>
+					<li><a href="" target="_blank"><img src="images/02.jpg" alt="{$focus.words}"/></a></li>
+					<li><a href="" target="_blank"><img src="images/03.jpg" alt="{$focus.words}"/></a></li>
+				  </ul>
+				  <div id="tkBottun" class="tkBtn"></div>
+				</div>
+
+				<script type="text/javascript">
+				var _tkAD = new tkSwitchAD("tklist","tkBottun");
+				</script>
+
+	</div>
+</div>
+
+
+<div class="zhuanjia-box">
+	<div class="title">
+			<span></span><h3>医院简介<img src="images/sxian.png"></h3>
+	</div>
+	<div class="zhuanjia">
+		<ul>
+		<li  class="zhuanjia-li1"><img src="images/yiyuan.jpg"></li>
+		
+		<li  class="zhuanjia-li3">
+			<p>
+				金川县人民医院始建于1947年8月的靖化卫生院，1959年6月更名为金川县人民医院，1984年医院自老街（箭道子）搬迁至金川镇（现勒乌镇）临江路20号，2017年8月迁至双柏树新区。是金川县唯一一所集医疗、教学、科研和预防保健为一体的二级综合医院。
+				
+			</p>
+			
+			<p>
+				医院占地面积43亩，建筑面积28900平方米，业务用房面积25157平方米，核定床位200张。设有内、外、妇、急诊、口腔、五官、感染性疾病等一级临床科室11个，设有检验、放射、超声、病理、药剂等7个医技科室，设有内、外、妇产、感染性疾病、重症医学、儿科和全科专业六个综合住院病区。医院拥有16排螺旋CT、数字胃肠机、双板DR、飞利浦彩超、高清电视腹腔镜、全自动检验化学发光仪、组织切片机、组织包埋机、高端麻醉机等大型医疗设备。医院编制人数164人，现有在职职工178人，其中卫生专业技术人员152人，正高2人，副高22人，中级30人。本科28人、专科125人.
+			<a href="hospital-info.html" class="xiangx">[详细]</a>
+			</p>
+			
+		</li>
+		
+		</ul>
+	</div>
+</div>
+<!-- ad -->
+<div class="ad"><img src="images/gg2.jpg"></div>
+<!-- zhuanjia -->
+<div class="zhuanjia-box">
+	<div class="title">
+			<span><a href="doctor-list.html">更多</a></span><h3>专家简介<img src="images/sxian.png"></h3>
+	</div>
+	<div class="doctor-info">
+	<img src="images/doctor1.jpg">
+	<div class="doctor-p">
+		<p>邓莉</p>
+		<p>邓莉，主管检验技师，现任金川县人民医院检验科副主任兼输血科主任<a href="doctor-info/doctor-1.html" class="xiangx">[详细]</a></p>
+	</div>
+	</div>
+	<div class="doctor-info">
+		
+		<img src="images/doctor2.jpg">
+		<div class="doctor-p">
+		<p>方富琼</p>
+		<p>方富琼，副主任医师，毕业于四川省卫生管理干部学院临床专业<a href="doctor-info/doctor-2.html" class="xiangx">[详细]</a></p>
+	</div>
+	
+	</div>
+	<div class="doctor-info">
+		
+		<img src="images/doctor3.jpg">
+		<div class="doctor-p">
+		<p>蒋军</p>
+		<p>蒋军，男44岁大专学历，主治医师，毕业于泸州医学院<a href="doctor-info/doctor-3.html" class="xiangx">[详细]</a></p>
+	</div>
+	
+	</div>
+	<div class="doctor-info">
+		
+		<img src="images/doctor4.jpg">
+		<div class="doctor-p">
+		<p>赖云兰</p>
+		<p>赖云兰，主治医师，大专，毕业于四川省卫生干部管理学院妇幼卫生专业<a href="doctor-info/doctor-4.html" class="xiangx">[详细]</a></p>
+	</div>
+	
+	</div>
+	<div class="doctor-info">
+		
+		<img src="images/doctor5.jpg">
+		<div class="doctor-p">
+		<p>李善茂</p>
+		<p>李善茂，男38岁大专学历，主治医师，毕业于四川省生殖学院<a href="doctor-info/doctor-5.html" class="xiangx">[详细]</a></p>
+	</div>
+	
+	</div>
+	<div class="doctor-info">
+		
+		<img src="images/doctor6.jpg">
+		<div class="doctor-p">
+		<p>罗琳荣</p>
+		<p> 罗琳荣，主治医师，中共党员，现任金川县人民医院外科副主任<a href="doctor-info/doctor-6.html" class="xiangx">[详细]</a></p>
+	</div>
+	
+	</div>
+</div>
+<!-- liaofa -->
+<div class="liaofa-box">
+<div class="title">
+			<span><a href="depart-list.html">更多</a></span><h3>医院科室<img src="images/sxian.png"></h3>
+	</div>
+	
+	<div class="i_zxme">
+	<div class="i_zxmel">
+		
+		
+		
+		<div class="i_zxmelc">
+			<div class="i_zxmelc1">
+				<ul>
+					<li id="two1" onmouseover="setContentTab('two',1,9)" class="hover"><a href="#">儿科</a></li>
+					<li id="two2" onmouseover="setContentTab('two',2,9)"><a href="#">妇产科</a></li>
+					<li id="two3" onmouseover="setContentTab('two',3,9)"><a href="#">急诊科</a></li>
+					<li id="two4" onmouseover="setContentTab('two',4,9)"><a href="#">检验科</a></li>
+					<li id="two5" onmouseover="setContentTab('two',5,9)"><a href="#">住院内科</a></li>
+					
+				</ul>
+			</div><!--i_zxmelc1-->
+		
+			<div class="i_zxmelc3">
+			
+				<div id="con_two_1" style="display: block;">
+					
+					<p style="margin-left: 20px;width: 58%;float: left;line-height: 28px;">
+						金川县人民医院儿科成立于2017年12月，现有人员14人，全部为大专及以上学历，其中中级及以上职称3人，医师4人，护理10人。多名医护人员先后到华西妇女儿童医院、四川省人民医院等进行专科及转岗进修培训。目前开放病床37张。主要医疗设备有新生儿辐射抢救台、新生儿暖箱、双面蓝光箱、心电监护设备等设备。依托医院各辅助科室发展，目前能对儿科常见、多发疾病开展诊疗活动，并提供儿童保健和健康咨询服务，医疗业务不断扩展。依托四川省人民医院托管和医联体能实现与省人民医院远程会诊。全体医护人员将在医院领导的带来下本着“保障儿童健康、提高生命质量”儿科学宗旨，以一流的医疗护理技术，优良的服务态度为广大患儿服务，使每一位患儿尽早康复。
+						<a href="depart-list.html" class="xiangx">[详细]</a>
+					</p>
+				<img src="images/ertong.jpg" style="width: 35%;float: right;"/>
+				</div><!--con_one5_1-->
+			
+				<div id="con_two_2" style="display: none;">
+					<p style="margin-left: 20px;width: 58%;float: left;line-height: 28px;">
+						我科是县级孕产妇抢救中心，也是我院的重点科室，是集妇科、产科、计划生育、新生儿为一体的综合性科室，有着优良的医德传统及精湛的医疗护理技术。我科拥有一支结构合理技术精湛的医教骨干队伍，现有医护人员19人，其中副主任医师21人，主治医师1人，住院医师6人，护士11人，开放床位27张。
+						<br />
+						我科目前开展了剖宫产、宫外孕手术、子宫肌瘤经腹剔除术、附件囊肿剥除术，在省医院老师的带领下经腹腔镜行子宫切除术；还开展了阴道镜检查、宫颈癌前病变筛查（TCT、HPV）。
+						<br />
+						作为县急救中心，长期以来一直承担着金川县及周边地区孕产妇危、急、重症的抢救。在妇产科危、急、重症的救治方面积累了丰富的临床经验。科室一贯坚持“以病人为中心的服务宗旨”，开通<a href="depart-list.html" class="xiangx">[详细]</a>
+					</p>
+					
+				<img src="images/fuchan.jpg" style="width: 35%;float: right;"/>
+					
+				</div><!--con_one5_2-->
+			
+				<div id="con_two_3" style="display: none;">
+					
+			<p style="margin-left: 20px;width: 58%;float: left;line-height: 28px;">
+						金川县人民医院急诊科成立于2011年8月18日，是金川县规模最大的急诊急救中心。自成立之初即成为我院对外展示实力的“T型台”，犹如我院的前哨阵地，是我院的一道靓丽的风景线。在医院领导的大力关怀及帮助下，2017年，我院新医院即将竣工，使急救中心的硬件设备在州内达达到较高水平，经6年的发展，现已成为我县规模最大，技术力量较雄厚，抢救设备较先进的急救医疗优势专科，全面担负我县及周边地区急、危、重症及突发事件的抢救工作。   
+						<a href="depart-list.html" class="xiangx">[详细]</a>
+					</p>
+				<img src="images/jizhen.jpg" style="width: 35%;float: right;"/>
+				</div><!--con_one5_3-->
+				
+				<div id="con_two_4" style="display: none;">
+							<p style="margin-left: 20px;width: 58%;float: left;line-height: 28px;">
+						我院检验科是一个发展中的以医疗、教学为一体的综合实验室，它的工作准则是以检验质量为根本，以检验服务患者为宗旨。它的质量方针是：准确及时、严谨认真、优质服务、持续改进。定期做检测仪器校准，不断完善质量体系，确保检验结果的准确性、科学性。及时为临床和患者提供可靠的检测报告。LIS系统的使用，使病人的信息准确无误，发报告也比较及时，医生能第一时间看到病人的检查结果。 
+						<br />
+						检验科设置5个专业岗位，分别为：临床检验、生物化学、免疫检验、细菌检验、、输血等。现有专业技术人员9人，其中高级2人，中级1人，初级6人，技术力量较雄厚。
+						<a href="depart-list.html" class="xiangx">[详细]</a>
+					</p>
+				<img src="images/jianyan.jpg" style="width: 35%;float: right;"/>
+				</div><!--con_one5_4-->
+			
+				<div id="con_two_5" style="display: none;">
+					<p style="margin-left: 20px;width: 58%;float: left;line-height: 28px;">
+						金川县人民医院是我县第一家二级乙等医院，内科住院部是一个合格的科室，包括大内科、儿科、传染科。科室设有传染病房，设有5张病床。目前医院住院部为10年前建设，硬件条件满足不了广大群众的住院需求，新医院即将竣工，新院设有儿科、传染科、内科单独病房，也有专门的新生儿室、高档病房、普通病房及重症监护室，新医院条件会得到大大改善。我科目前拥有9位医师；其中副主任医师2人，主治医师2人，住院医师5人。护理有16人，副主任护师1人，主管护师1人，护师及护士14人。内科主要承担我县及周边地区群众的常见病、多方病诊治、部分疑难危重症的诊治。
+						<a href="depart-list.html" class="xiangx">[详细]</a>
+					</p>
+				<img src="images/zhuyuan.jpg" style="width: 35%;float: right;"/>
+				</div><!--con_one5_5-->
+
+			</div><!--i_zxmelc3-->
+			
+		</div><!--i_zxmelc-->
+		
+	</div><!--i_zxmel-->
+
+	
+</div><!--i_zxme全局-->
+</div>
+
+<!-- ad -->
+<div class="ad"><img src="images/gg1.jpg"></div>
+
+<!-- main -->
+<div class="main-about">
+<!-- main-left -->
+	<div class="mtel">
+<img src="images/main-left.jpg">
+	</div>
+<!-- main-center -->
+	<div class="main-center" >
+		<div class="title">
+			<span><a href="pindao.html">更多</a></span><h3> 医院动态<img src="images/sxian.png"></h3>
+		</div>
+		<div class="jjimg"><img src="images/news.jpg" ></div>
+		<div style="clear:both"></div>
+				<div class="main">
+		<div>
+			<ul class="tab">
+				<li>医院新闻</li>
+				<li>典型案例</li>
+			</ul>
+		</div>
+		<div class="con">
+			<div class="con-cen">
+		     <h4>心脏神经官能症症状表现有</h4>
+			 <p>心脏神经官能症症状表现有哪些呢?我们知道心脏神经官能症就是心身疾病中比较常见的一种，相对来说是不容易治愈的。所以一定要了解症状有哪些。针对这个问题，我们一起来看 ...<a href="neirong.html" class="xiangx">[详细]</a></p>
+				<ul>
+				<li><a href="neirong.html">▪心脏神经官能症症状表现有哪些呢?</a></li>
+				<li><a href="neirong.html">▪心脏神经官能症症状表现有哪些呢?</a></li>
+				<li><a href="neirong.html">▪心脏神经官能症症状表现有哪些呢?</a></li>
+				</ul>
+			</div>
+			<div class="con-cen">
+		     <h4>所以一定要了解症状有哪些。</h4>
+			 <p>心脏神经官能症症状表fgf现有哪些呢?我们知道心脏神经官能症就是心身疾病中比较常见的一种，相对来说是不容易治愈的。所以一定要了解症状有哪些。针对这个问题，我们一起来看 ...<a href="neirong.html" class="xiangx">[详细]</a></p>
+				<ul>
+				<li><a href="neirong.html">▪心脏神经官能症症状表现有哪些呢?</a></li>
+				<li><a href="neirong.html">▪心脏神经官能症症状表现有哪些呢?</a></li>
+				<li><a href="neirong.html">▪心脏神经官能症症状表现有哪些呢?</a></li>
+				</ul>
+			</div>
+		
+		</div>
+	</div>
+<script>
+$(".main").FengTab({titCell:".tab",mainCell:".con",defaultIndex:0,trigger:"click",titOnClassName:"on",showtime: 0});
+</script>
+	</div>
+
+</div>
+
+<!-- footer -->
+<div class="footer-box">
+<div class="foot">
+  <div class="foot_con">
+    <div class="foot_left"><img src="images/foot-logo.png" /></div>
+    <div class="foot_right">
+      <p> Copyright 2018, 版权所有 金川县人民医院<br />
+        健康咨询热线：400-0000-0000 <br />
+        联系地址：金川县金川镇临江路20号<br />
+     
+
+ <br />网站备案：<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=DD0cD6VVwfTfawxs4et6UQzdrUPzu6J7mcR9jMnn0484AIbuvzIC!-1376340174" target="_blank">蜀ICP备-18029635号</a>
+              </p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

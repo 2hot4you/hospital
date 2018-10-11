@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>医院</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/list.css"/>
+<!-- 导航部分 -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/mY_neirong.js"></script>
+	<script src="js/FengTab.js" type="text/javascript"></script>
+	
+<script  type="text/javascript"> 
+$(document).ready(function(){
+	
+	$(".navbg").capacityFixed();
+	
+	$("#navul > li").not(".navhome").hover(function(){
+		$(this).addClass("navmoon");
+	},function(){
+		$(this).removeClass("navmoon");
+	});
+	
+});
+</script>
+<script type="text/javascript">
+function setContentTab(name, curr, n) {
+    for (i = 1; i <= n; i++) {
+        var menu = document.getElementById(name + i);
+        var cont = document.getElementById("con_" + name + "_" + i);
+        menu.className = i == curr ? "hover" : "";
+        if (i == curr) {
+            cont.style.display = "block";
+        } else {
+            cont.style.display = "none";
+        }
+    }
+}
+</script>
+
+</head>
+<body>
+<!-- 头部 -->
+<div class="topbox">
+	<div class="top">
+			<div class="top-left">
+			您好：欢迎来到金川县人民医院！
+			</div>
+			<div class="top-right">
+			<a href="#">网站首页</a>|
+			<a href="#">联系电话</a>|
+			<a href="#">点击咨询</a>
+			</div>
+	</div>
+</div>
+<!-- logo -->
+<div class="logobox">
+	<div class="logobox-left">
+	<img src="images/logo.png">
+	</div>
+	<div class="logobox-right">
+		<img src="images/dianhua.png">
+	</div>
+	<div class="sousuo">
+		 <div class="dis_right">
+      <style>
+	  .txtsea{ border:none; width:130px;padding-left: 10px; margin-left:15px; display:inline; float:left; line-height:20px; background:#fff;}
+	
+      </style>
+        <form  name="formsearch" action="#" onSubmit="check();">
+        <div class="search">
+        <input class="txtsea" value="搜一下" onBlur="this.value =(this.value=='') ? '搜一下' : this.value;" onFocus="this.value =(this.value=='搜一下') ? '' : this.value;" maxlength="150" id="keyword" name="keyword" type="text">
+        <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+    </div>
+	</div>
+</div>
+<!-- 导航 -->
+	<div class="navbg">
+		<div class="col960" style="margin:auto">
+			<ul id="navul" class="cl">
+				<li>
+					<a href="index.html">网站首页</a>	
+				</li>
+				<li>
+					<a href="hospital-info.html">医院概况</a>
+					
+				</li>
+				<li>
+					<a href="doctor-list.html">专家简介</a>
+					
+				</li>
+				<li>
+					<a href="pindao.html">医院动态</a>
+				</li>
+				
+				<li>
+					<a href="#">病例展示</a>
+					
+				</li>
+				<li>
+					<a href="#">联系我们</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+
+<!-- banner -->
+	
+	<div class="banner-box">
+	<div id="doc">
+				<div class="tkWrap">
+
+				  <ul id="tklist" class="tkAD">
+				  
+					
+					<li><a href="" target="_blank"><img src="images/01.jpg" alt="{$focus.words}"/></a></li>
+					<li><a href="" target="_blank"><img src="images/02.jpg" alt="{$focus.words}"/></a></li>
+					<li><a href="" target="_blank"><img src="images/03.jpg" alt="{$focus.words}"/></a></li>
+				  </ul>
+				  <div id="tkBottun" class="tkBtn"></div>
+				</div>
+
+				<script type="text/javascript">
+				var _tkAD = new tkSwitchAD("tklist","tkBottun");
+				</script>
+
+	</div>
+</div>
+<!--neirong main -->
+<div class="nr-main">
+	<!-- left -->
+	<div class="nr-main-lf">
+		<div class="title">
+				<h3> 您的当前位置：首页>医院简介</h3>
+		</div>
+		<div class="nr-main-lf-cen">
+			<div class="nr-h1"><h1>金川县人民医院简介<h1></div>
+			<div class="t2">来源：未知    发表时间：2018-5-20    点击: 181次 </div>
+			<div class="nr-p">
+				<p>金川县人民医院始建于1947年8月的靖化卫生院，1959年6月更名为金川县人民医院，1984年医院自老街（箭道子）搬迁至金川镇（现勒乌镇）临江路20号，2017年8月迁至双柏树新区。是金川县唯一一所集医疗、教学、科研和预防保健为一体的二级综合医院。
+				</p>
+				<img src="images/hospital-1.jpg" style="width: 100%;margin-top: 20px;"/>
+				
+					
+
+　　<p>医院占地面积43亩，建筑面积28900平方米，业务用房面积25157平方米，核定床位200张。设有内、外、妇、急诊、口腔、五官、感染性疾病等一级临床科室11个，设有检验、放射、超声、病理、药剂等7个医技科室，设有内、外、妇产、感染性疾病、重症医学、儿科和全科专业六个综合住院病区。医院拥有16排螺旋CT、数字胃肠机、双板DR、飞利浦彩超、高清电视腹腔镜、全自动检验化学发光仪、组织切片机、组织包埋机、高端麻醉机等大型医疗设备。医院编制人数164人，现有在职职工178人，其中卫生专业技术人员152人，正高2人，副高22人，中级30人。本科28人、专科125人。
+   </p>
+<img src="images/hospital-2.jpg" style="width: 100%;margin-top: 20px;"/>
+　　<p>2015年9月，与四川省人民医院签订了为期10年托管协议，是省人民医院在民族地区托管的第一家县级医院，同时通过“爱婴医院”复审；2017年8月，我院加入了以温江区人民医院为核心的“民族地区协作指导医院友好互助联盟”。近年来，我院在省人民医院、眉山市对口支援下，不断提升新业务，先后开展了利普刀治疗宫颈縻烂，宫颈液基细胞检查，腹腔镜胆囊切除术，胃肠造影超声新技术，微创新肛肠手术—吻合器痔环切术（PPH），远程会诊系统，微生物实验室，消化道造影，静脉肾盂造影，CT三维重建等新项目，医疗技术服务和管理水平明显提升。于2017年9月顺利完成了二甲医院的创办。
+	</p>
+
+　　<p>我院将于2017年10月18——22日启动整体搬迁项目，这是金川县重点民生项目，在县委、县政府正确领导下，历经六年建设，一座功能设施齐全，宽敞明亮美观的现代化医院已经建成。县医院搬迁后，医疗环境将会很大改善，我院将竭诚为全县人民提供更高效、优质、舒适、便捷的医疗服务。
+	</p>
+	<p>金川县人民医院于2017年9月通过四川省医院等级评审委员会专家评审，2018年2月被四川省卫生和计划生育委员会正式批准为国家二级甲等综合医院。
+	</p>
+　　
+<div class="spxp">
+<span><a href="">上一篇：失眠会诱发哪些身体疾病？</a></span>
+<span><a href="">下一篇：失眠会诱发哪些身体疾病？</a></span>
+</div>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+	<!-- riight -->
+	<div class="ny-rh">
+			<div class="title">
+				<span><a href="#">更多</a></span><h3> 公司简介</h3>
+		    </div>
+			<div class="ny-jianj">
+				<img src="images/neiye_10.jpg">
+				<p>金川县人民医院始建于1947年8月的靖化卫生院，1959年6月更名为金川县人民医院，1984年医院自老街（箭道子）搬迁至金川镇（现勒乌镇）临江路20号，2017年8月迁至双柏树新区。是金川县唯一一所集医疗、教学、科研和预防保健为一体的二级综合医院。
+			</p>
+			</div>
+			<div class="title mt20">
+				<span><a href="#">更多</a></span><h3> 网上挂号</h3>
+		    </div>
+			<div class="ny-guah">
+				<img src="images/neiye_10.jpg">
+				<ul>
+				<li><a href="#"><img src="images/neiye_16.jpg"></a></li>
+				<li><a href="#"><img src="images/neiye_18.jpg"></a></li>
+				<li><a href="#"><img src="images/neiye_22.jpg"></a></li>
+				<li><a href="#"><img src="images/neiye_23.jpg"></a></li>
+				</ul>
+				
+				<a href="#"><img src="images/neiye_26.jpg"></a>
+			</div>
+			
+			
+				
+			
+	</div>
+</div>
+
+<!-- footer -->
+<div class="footer-box">
+<div class="foot">
+  <div class="foot_con">
+    <div class="foot_left"><img src="images/foot-logo.png" /></div>
+    <div class="foot_right">
+      <p> Copyright 2018, 版权所有 金川县人民医院<br />
+        健康咨询热线：400-0000-0000 <br />
+        联系地址：金川县金川镇临江路20号<br />
+     
+
+ <br />网站备案：<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=DD0cD6VVwfTfawxs4et6UQzdrUPzu6J7mcR9jMnn0484AIbuvzIC!-1376340174" target="_blank">蜀ICP备-18029635号</a>
+              </p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
